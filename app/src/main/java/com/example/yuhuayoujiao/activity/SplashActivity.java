@@ -1,4 +1,4 @@
-package com.example.yuhuayoujiao;
+package com.example.yuhuayoujiao.activity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.yuhuayoujiao.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -38,7 +40,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //发送intent实现页面跳转，第一个参数为当前页面的context，第二个参数为要跳转的主页
-                Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 //跳转后关闭当前欢迎页面
                 SplashActivity.this.finish();
